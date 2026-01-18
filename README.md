@@ -1,14 +1,3 @@
-# Webpack Starter Template
-
-Basic Webpack 5 setup for small JavaScript projects.
-
-How to use it:
-
-1. Click the green "Use this template" button on GitHub
-2. Create your new repository
-3. Clone your new repository to your computer
-
-Then in the terminal:
 
 npm install
 npm run dev     ← development with auto refresh
