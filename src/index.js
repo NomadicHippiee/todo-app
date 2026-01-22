@@ -1,12 +1,7 @@
 import './style.css';
+import './components/header.js';
+import header from './components/header.js';
 
 console.log("Webpack is alive!");
 
-function component() {
-  const element = document.createElement('div');
-  element.textContent = 'Hello, Webpack Starter Template!';
-  element.classList.add('starter-template');
-  return element;
-}
-
-document.body.appendChild(component());
+document.body.appendChild(header());
