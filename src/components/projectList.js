@@ -1,4 +1,4 @@
-import app from "./modules/app.js";
+import app from "../modules/app.js";
 
 function projectList() {
   const projectContainer = document.createElement("div");
