@@ -28,7 +28,7 @@ function projectList(onProjectChanged) {
     });
 
     viewBtn.addEventListener("click", () => {
-      console.log("View todos for project:", project.id);
+      onProjectChanged(project.id);
     });
 
     projectContainer.appendChild(projectCard);

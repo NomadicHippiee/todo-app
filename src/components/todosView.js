@@ -4,6 +4,7 @@ function todosView(projectId, onBack) {
     const container = document.createElement("div");
     const project = app.getProject(projectId);
     const backbtn = document.createElement("button");
+    backbtn.textContent = "Back to Projects";
 
     backbtn.addEventListener("click", ()=>{
         onBack()
