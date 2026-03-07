@@ -7,3 +7,31 @@ body {
   background: #f8f9fa;
   height: 100vh;
 }
+
+.main-section {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.left-column {
+  flex: 70%;
+  overflow-y: auto;
+}
+
+.right-column {
+  flex: 30%;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  background: white;
+}

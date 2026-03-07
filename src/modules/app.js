@@ -118,8 +118,8 @@ class App {
         const project = new Project(
             projectData.name,
             reconstructedTodos,
-            projectData.startDate,
-            projectData.deadline
+            new Date(projectData.startDate),
+            new Date(projectData.deadline)
         );
         project.id = projectData.id;
         return project;

@@ -1,6 +1,6 @@
 import app from "../modules/app.js";
 
-function addProjectForm() {
+function addProjectForm(onProjectAdded) {
     const form = document.createElement("form");
     form.classList.add("add-project-form");
     const projectNameInput = document.createElement("input");
@@ -27,6 +27,8 @@ function addProjectForm() {
         const deadline = new Date(deadlineInput.value);
 
         app.addProject(name, startDate, deadline);
+
+        onProjectAdded();
 
         form.reset();
     });
