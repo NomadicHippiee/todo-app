@@ -3,6 +3,7 @@ import header from './components/header.js';
 import projectList from './components/projectList.js';
 import addProjectForm from './components/addProjectForm.js';
 import app from './modules/app.js';
+import addTodoForm from './components/addTodoForm.js';
 
 console.log("All projects:", app.getAllProjects());
 
@@ -26,7 +27,11 @@ function refreshProjectList() {
     projectListContainer.appendChild(projectList(refreshProjectList));
 }
 
-rightColumn.append(addProjectForm(refreshProjectList));
+rightColumn.append(addProjectForm(refreshProjectList),
+addTodoForm(()=>{
+
+})
+);
 
 leftColumn.appendChild(projectListContainer);
 
