@@ -2,6 +2,7 @@ import app from "../modules/app.js";
 
 function todosView(projectId, onBack) {
     const container = document.createElement("div");
+    container.classList.add("card")
     const project = app.getProject(projectId);
     const backbtn = document.createElement("button");
     backbtn.textContent = "Back to Projects";
