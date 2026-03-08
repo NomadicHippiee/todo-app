@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,11 +9,11 @@ body {
 }
 
 header {
-    padding: 15px;
-    margin: 20px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    background-color: white;
+  padding: 15px;
+  margin: 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
 }
 
 .main-section {
@@ -29,6 +29,9 @@ header {
 
 .right-column {
   flex: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .projects-container {
@@ -37,9 +40,25 @@ header {
   gap: 15px;
 }
 
-.project-card {
+.project-card, .add-project-form, .add-todo-form, .todo-card, .card {
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 5px;
   background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
+
+.add-project-form, .add-todo-form {
+    border: 2px solid #ddd;
+}
+
+.todo-card button {
+  margin-left: auto;
+}
+
+.card button {
+  width: 120px;
+}
+
