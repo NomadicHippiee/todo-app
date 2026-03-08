@@ -1,6 +1,6 @@
 import app from "../modules/app.js";
 
-function projectList(onProjectChanged) {
+function projectList(onViewTodos, onRefresh) {
   const projectContainer = document.createElement("div");
   projectContainer.classList.add("projects-container");
   const projects = app.getAllProjects();
@@ -24,11 +24,11 @@ function projectList(onProjectChanged) {
 
     deleteBtn.addEventListener("click", () => {
       app.removeProject(project.id);
-      onProjectChanged();
+      onRefresh();
     });
 
     viewBtn.addEventListener("click", () => {
-      onProjectChanged(project.id);
+      onViewTodos(project.id);
     });
 
     projectContainer.appendChild(projectCard);

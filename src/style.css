@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Corben:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,12 +10,31 @@ body {
   height: 100vh;
 }
 
+h1,
+h3,
+h4 {
+  font-family: "Bitcount Prop Double", system-ui;
+  font-optical-sizing: auto;
+}
+
+button {
+  background-color: #5AFF15;
+  border: 1px solid #A657AE;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+
+button:hover {
+  border: 2px solid #A657AE;
+}
+
 header {
   padding: 15px;
   margin: 20px;
   border: 2px solid #ddd;
   border-radius: 5px;
   background-color: white;
+  background-color: rgba(157, 117, 203, 0.5);
 }
 
 .main-section {
@@ -40,7 +61,11 @@ header {
   gap: 15px;
 }
 
-.project-card, .add-project-form, .add-todo-form, .todo-card, .card {
+.project-card,
+.add-project-form,
+.add-todo-form,
+.todo-card,
+.card {
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 5px;
@@ -48,10 +73,13 @@ header {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  background-color: rgba(157, 117, 203, 0.1);
 }
 
-.add-project-form, .add-todo-form {
-    border: 2px solid #ddd;
+.add-project-form,
+.add-todo-form {
+  border: 2px solid #ddd;
+  background-color: rgba(157, 117, 203, 0.3);
 }
 
 .todo-card button {
@@ -62,3 +90,6 @@ header {
   width: 120px;
 }
 
+label {
+  font-size: 12px;
+}

@@ -25,7 +25,7 @@ const projectListContainer = document.createElement("div");
 
 function showProjects() {
   projectListContainer.innerHTML = "";
-  projectListContainer.appendChild(projectList(showTodos));
+  projectListContainer.appendChild(projectList(showTodos, showProjects));
 }
 
 function showTodos(projectId) {
